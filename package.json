@@ -1,0 +1,15 @@
+{
+  "name": "usocial",
+  "version": "1.0.0",
+  "description": "Aplicación en ambiente web, llevara el control del foro y blog",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "author": "Daniel Andreé Hernández Flores",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
