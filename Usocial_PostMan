@@ -1,0 +1,180 @@
+{
+	"info": {
+		"_postman_id": "d9dc5f40-f489-4fd3-a014-13c14f1c96ca",
+		"name": "Usocial-Backend",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "29418948"
+	},
+	"item": [
+		{
+			"name": "Prueba",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "localhost:3200/user/prueba"
+			},
+			"response": []
+		},
+		{
+			"name": "Registrar Usuario",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "id_User",
+							"value": "202202233",
+							"type": "text"
+						},
+						{
+							"key": "nombres",
+							"value": "Matthew",
+							"type": "text"
+						},
+						{
+							"key": "apellidos",
+							"value": "Reyes",
+							"type": "text"
+						},
+						{
+							"key": "genero",
+							"value": "M",
+							"type": "text"
+						},
+						{
+							"key": "facultad",
+							"value": "Inge",
+							"type": "text"
+						},
+						{
+							"key": "carrera",
+							"value": "C Y S",
+							"type": "text"
+						},
+						{
+							"key": "correo",
+							"value": "asdgas",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "@Matthew",
+							"type": "text"
+						},
+						{
+							"key": "rol",
+							"value": "Usuario",
+							"type": "text"
+						}
+					]
+				},
+				"url": "localhost:3200/user/registrarse"
+			},
+			"response": []
+		},
+		{
+			"name": "Listar Usuarios",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": []
+				},
+				"url": "localhost:3200/user/listar_Usuarios"
+			},
+			"response": []
+		},
+		{
+			"name": "Iniciar Sesión",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "id_User",
+							"value": "5643213213",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "@Melgara",
+							"type": "text"
+						}
+					]
+				},
+				"url": "localhost:3200/user/iniciar_Sesion"
+			},
+			"response": []
+		},
+		{
+			"name": "Actualizar Usuario",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "nombres",
+							"value": "Matthew Emmanuel",
+							"type": "text"
+						},
+						{
+							"key": "apellidos",
+							"value": "Reyes Melgar",
+							"type": "text"
+						},
+						{
+							"key": "genero",
+							"value": "M",
+							"type": "text"
+						},
+						{
+							"key": "facultad",
+							"value": "Ingeniera",
+							"type": "text"
+						},
+						{
+							"key": "carrera",
+							"value": "Ciencias y Sistemas",
+							"type": "text"
+						},
+						{
+							"key": "correo",
+							"value": "masada@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "@Matthew_Emmanuel",
+							"type": "text"
+						}
+					]
+				},
+				"url": "localhost:3200/user/actualizar_Usuario/202202233"
+			},
+			"response": []
+		},
+		{
+			"name": "Eliminar Usuario",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": []
+				},
+				"url": "localhost:3200/user/eliminar_Usuario/5643213213"
+			},
+			"response": []
+		}
+	]
+}

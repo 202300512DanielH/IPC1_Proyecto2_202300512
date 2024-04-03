@@ -1,15 +1,15 @@
 'use strict'
 
 class User {
-    constructor(id_User, nombres, apellidos, genero, facultad, carrera, correoElectronico, contraseña, rol) {
+    constructor(id_User, nombres, apellidos, genero, facultad, carrera, correo, password, rol) {
         this.id_User = id_User;
         this.nombres = nombres;
         this.apellidos = apellidos;
         this.genero = genero;
         this.facultad = facultad;
         this.carrera = carrera;
-        this.correoElectronico = correoElectronico;
-        this.contraseña = contraseña;
+        this.correo = correo;
+        this.password = password;
         this.rol = rol;
         this.cant_Publicaciones = 0; // Inicializamos la cantidad de publicaciones en 0
     }
