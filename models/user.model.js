@@ -1,8 +1,8 @@
 'use strict'
 
 class User {
-    constructor(id_User, nombres, apellidos, genero, facultad, carrera, correo, password, rol) {
-        this.id_User = id_User;
+    constructor(codigo, nombres, apellidos, genero, facultad, carrera, correo, password, rol) {
+        this.codigo = codigo;
         this.nombres = nombres;
         this.apellidos = apellidos;
         this.genero = genero;
@@ -30,4 +30,4 @@ class User {
     }
 }
 
-module.exports = User
+module.exports = User;

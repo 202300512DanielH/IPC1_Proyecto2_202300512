@@ -12,6 +12,7 @@ const bodyParser = require('body-parser');
 // ------------------------------
 //EN eSTA SECCION SE HARAN LOS IMPORTS DE LAS ROUTAS QUE TENDRAN LAS PETICIONES HTTP
 const user_Route = require('./routes/user.routes');
+const publicacion_Route = require('./routes/publicaciones.routes');
 //
 const app = express(); // Me brinda una instancia de la aplicacion EXPRESS
 
@@ -27,5 +28,6 @@ app.use((req, res, next) => {
 });
 
 app.use('/user', user_Route);
+app.use('/publicacion', publicacion_Route);
 
 module.exports = app;

@@ -1,0 +1,102 @@
+[
+    {
+        "codigo": "20240001",
+        "nombres": "Alberto Juan",
+        "apellidos": "Pérez Lopez",
+        "genero": "M",
+        "facultad": "Arquitectura",
+        "carrera": "Diseño Gráfico",
+        "correo": "albertolo@email.com",
+        "contrasenia": "Albert123-"
+    },
+    {
+        "codigo": "20240002",
+        "nombres": "María José",
+        "apellidos": "García Martínez",
+        "genero": "F",
+        "facultad": "Medicina",
+        "carrera": "Medicina General",
+        "correo": "mariajose@email.com",
+        "contrasenia": "Maria456!"
+    },
+    {
+        "codigo": "20240003",
+        "nombres": "Carlos Eduardo",
+        "apellidos": "Rodríguez Sánchez",
+        "genero": "M",
+        "facultad": "Ingeniería",
+        "carrera": "Ingeniería Civil",
+        "correo": "carloseduardo@email.com",
+        "contrasenia": "Carlos789#"
+    },
+    {
+        "codigo": "20240004",
+        "nombres": "Laura Fernanda",
+        "apellidos": "Gómez Ramírez",
+        "genero": "F",
+        "facultad": "Ciencias Sociales",
+        "carrera": "Psicología",
+        "correo": "laurafernanda@email.com",
+        "contrasenia": "Laura123_"
+    },
+    {
+        "codigo": "20240005",
+        "nombres": "Juan Manuel",
+        "apellidos": "Martínez Pérez",
+        "genero": "M",
+        "facultad": "Economía",
+        "carrera": "Administración de Empresas",
+        "correo": "juanmanuel@email.com",
+        "contrasenia": "Juan456!"
+    },
+    {
+        "codigo": "20240006",
+        "nombres": "Ana María",
+        "apellidos": "López Gutiérrez",
+        "genero": "F",
+        "facultad": "Comunicación",
+        "carrera": "Periodismo",
+        "correo": "anamaria@email.com",
+        "contrasenia": "Ana789#"
+    },
+    {
+        "codigo": "20240007",
+        "nombres": "Diego Alejandro",
+        "apellidos": "Hernández Rodríguez",
+        "genero": "M",
+        "facultad": "Arquitectura",
+        "carrera": "Arquitectura de Interiores",
+        "correo": "diegoalejandro@email.com",
+        "contrasenia": "Diego123-"
+    },
+    {
+        "codigo": "20240008",
+        "nombres": "Sofía Isabel",
+        "apellidos": "García López",
+        "genero": "F",
+        "facultad": "Medicina",
+        "carrera": "Odontología",
+        "correo": "sofiaisabel@email.com",
+        "contrasenia": "Sofia456!"
+    },
+    {
+        "codigo": "20240009",
+        "nombres": "Andrés Felipe",
+        "apellidos": "Martínez Gómez",
+        "genero": "M",
+        "facultad": "Ingeniería",
+        "carrera": "Ingeniería de Sistemas",
+        "correo": "andresfelipe@email.com",
+        "contrasenia": "Andres789#"
+    },
+    {
+        "codigo": "20240010",
+        "nombres": "Paola Andrea",
+        "apellidos": "López García",
+        "genero": "F",
+        "facultad": "Ciencias Sociales",
+        "carrera": "Trabajo Social",
+        "correo": "paolaandrea@email.com",
+        "contrasenia": "Paola123_"
+    }
+]
