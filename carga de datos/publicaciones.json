@@ -1,0 +1,87 @@
+[
+
+    {
+        "codigo": 20240001,
+        "descripcion": "Hoy es el primer día, ¿alguna recomendación?",
+        "categoria": "Variedad",
+        "anonimo": false
+    },
+    {
+        "codigo": 20240001,
+        "descripcion": "¿Qué lugares recomiendan para estudiar?",
+        "categoria": "Académico",
+        "anonimo": false
+    },
+    {
+        "codigo": 20240001,
+        "descripcion": "¿Alguien sabe si la biblioteca está abierta los fines de semana?",
+        "categoria": "Importante",
+        "anonimo": false
+    },
+    {
+        "codigo": 20240002,
+        "descripcion": "¡Feliz viernes a todos!",
+        "categoria": "Variedad",
+        "anonimo": false
+    },
+    {
+        "codigo": 20240002,
+        "descripcion": "¿Alguien quiere formar un equipo de estudio?",
+        "categoria": "Académico",
+        "anonimo": false
+    },
+    {
+        "codigo": 20240003,
+        "descripcion": "¿Qué opinan sobre el nuevo campus?",
+        "categoria": "Divertido",
+        "anonimo": true
+    },
+    {
+        "codigo": 20240003,
+        "descripcion": "¿Alguien ha probado el nuevo café de la cafetería?",
+        "categoria": "Variedad",
+        "anonimo": true
+    },
+    {
+        "codigo": 20240004,
+        "descripcion": "¿Qué les pareció la conferencia de ayer?",
+        "categoria": "Divertido",
+        "anonimo": false
+    },
+    {
+        "codigo": 20240005,
+        "descripcion": "¡Hola a todos! ¿Qué tal su día?",
+        "categoria": "Variedad",
+        "anonimo": false
+    },
+    {
+        "codigo": 20240006,
+        "descripcion": "¿Alguien quiere formar un equipo de estudio?",
+        "categoria": "Académico",
+        "anonimo": true
+    },
+    {
+        "codigo": 20240007,
+        "descripcion": "¿Cómo están preparándose para los exámenes?",
+        "categoria": "Académico",
+        "anonimo": false
+    },
+    {
+        "codigo": 20240008,
+        "descripcion": "¡Buenas tardes! ¿Alguien conoce buenos lugares para comer cerca del campus?",
+        "categoria": "Variedad",
+        "anonimo": false
+    },
+    {
+        "codigo": 20240009,
+        "descripcion": "¿Alguien ha probado el nuevo café de la cafetería?",
+        "categoria": "Variedad",
+        "anonimo": false
+    },
+    {
+        "codigo": 20240010,
+        "descripcion": "¿Qué les pareció la conferencia de ayer?",
+        "categoria": "Variedad",
+        "anonimo": true
+    }
+]

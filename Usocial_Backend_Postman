@@ -1,0 +1,458 @@
+{
+	"info": {
+		"_postman_id": "870351fb-cf1c-450d-bbec-cc94e344bfba",
+		"name": "Usocial-Backend",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "29418948"
+	},
+	"item": [
+		{
+			"name": "Usuario",
+			"item": [
+				{
+					"name": "Publicaciones",
+					"item": [
+						{
+							"name": "Crear Publicación",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "descripcion",
+											"value": "Esta es mi primera publicación!",
+											"type": "text"
+										},
+										{
+											"key": "categoria",
+											"value": "Divertido",
+											"type": "text"
+										},
+										{
+											"key": "anonimo",
+											"value": "false",
+											"type": "text"
+										},
+										{
+											"key": "imagen",
+											"value": "//PATH IMAGEN",
+											"type": "text",
+											"disabled": true
+										}
+									]
+								},
+								"url": "localhost:3200/publicacion/crear_Publicacion"
+							},
+							"response": []
+						},
+						{
+							"name": "Mostrar Publicaciones",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": []
+								},
+								"url": "localhost:3200/publicacion/mostrar_Publicaciones"
+							},
+							"response": []
+						},
+						{
+							"name": "Comentario",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "comentario",
+											"value": "Como estan ustedes?",
+											"type": "text"
+										},
+										{
+											"key": "id_Publicacion",
+											"value": "5",
+											"type": "text"
+										}
+									]
+								},
+								"url": "localhost:3200/publicacion/comentario"
+							},
+							"response": []
+						},
+						{
+							"name": "Likes",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "id_Publicacion",
+											"value": "13",
+											"type": "text"
+										}
+									]
+								},
+								"url": "localhost:3200/publicacion/like"
+							},
+							"response": []
+						},
+						{
+							"name": "Mostrar_Tendencias",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": []
+								},
+								"url": "localhost:3200/publicacion/mostrar_Tendencias"
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Peticiones comunes",
+					"item": [
+						{
+							"name": "Iniciar Sesión",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "codigo",
+											"value": "20240999",
+											"type": "text"
+										},
+										{
+											"key": "password",
+											"value": "@JorgeLo",
+											"type": "text"
+										}
+									]
+								},
+								"url": "localhost:3200/user/iniciar_Sesion"
+							},
+							"response": []
+						},
+						{
+							"name": "Registrar Usuario",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "codigo",
+											"value": "20240999",
+											"type": "text"
+										},
+										{
+											"key": "nombres",
+											"value": "Jorge",
+											"type": "text"
+										},
+										{
+											"key": "apellidos",
+											"value": "Lopez",
+											"type": "text"
+										},
+										{
+											"key": "genero",
+											"value": "M",
+											"type": "text"
+										},
+										{
+											"key": "facultad",
+											"value": "Ingenieria",
+											"type": "text"
+										},
+										{
+											"key": "carrera",
+											"value": "Ciencias y Sistemas",
+											"type": "text"
+										},
+										{
+											"key": "correo",
+											"value": "asdgas",
+											"type": "text"
+										},
+										{
+											"key": "password",
+											"value": "@JorgeLo",
+											"type": "text"
+										},
+										{
+											"key": "rol",
+											"value": "Usuario",
+											"type": "text"
+										}
+									]
+								},
+								"url": "localhost:3200/user/registrarse"
+							},
+							"response": []
+						},
+						{
+							"name": "Actualizar Usuario",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "nombres",
+											"value": "Jorge Javier",
+											"type": "text"
+										},
+										{
+											"key": "apellidos",
+											"value": "Lopez Lopez",
+											"type": "text"
+										},
+										{
+											"key": "genero",
+											"value": "M",
+											"type": "text"
+										},
+										{
+											"key": "facultad",
+											"value": "Ingeniera",
+											"type": "text"
+										},
+										{
+											"key": "carrera",
+											"value": "Ciencias y Sistemas",
+											"type": "text"
+										},
+										{
+											"key": "correo",
+											"value": "jorge@gmail.com",
+											"type": "text"
+										},
+										{
+											"key": "password",
+											"value": "@JorgeLo",
+											"type": "text"
+										}
+									]
+								},
+								"url": "localhost:3200/user/actualizar_Usuario/20240999"
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Administrador",
+			"item": [
+				{
+					"name": "Administrar Usuarios",
+					"item": [
+						{
+							"name": "Listar Usuarios",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": []
+								},
+								"url": "localhost:3200/user/listar_Usuarios"
+							},
+							"response": []
+						},
+						{
+							"name": "Eliminar Usuario",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": []
+								},
+								"url": "localhost:3200/user/eliminar_Usuario/20240001"
+							},
+							"response": []
+						},
+						{
+							"name": "Carga Masiva Usuarios",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "path",
+											"value": "C:\\Users\\matth\\OneDrive\\Documentos\\VisualStudioProjects\\Usocial-Backend\\carga de datos\\usuarios.json",
+											"type": "text"
+										}
+									]
+								},
+								"url": "localhost:3200/user/carga_Masiva"
+							},
+							"response": []
+						},
+						{
+							"name": "Mostrar Usuario",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": "localhost:3200/user/usuario_Unico/20240006"
+							},
+							"response": []
+						},
+						{
+							"name": "Usuario CSV",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "codigo",
+											"value": "20240010",
+											"type": "text"
+										}
+									]
+								},
+								"url": "localhost:3200/user/usuario_CSV"
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Administrar Publicaciones",
+					"item": [
+						{
+							"name": "carga Masiva Publicaciones",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "path",
+											"value": "C:\\Users\\matth\\OneDrive\\Documentos\\VisualStudioProjects\\Usocial-Backend\\carga de datos\\publicaciones.json",
+											"type": "text"
+										}
+									]
+								},
+								"url": "localhost:3200/publicacion/carga_Masiva"
+							},
+							"response": []
+						},
+						{
+							"name": "Eliminar Publicacion",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"url": "localhost:3200/publicacion/eliminar_Publicacion/13"
+							},
+							"response": []
+						},
+						{
+							"name": "mostrar Publicacion",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": "localhost:3200/publicacion/publicacion_Unica/13"
+							},
+							"response": []
+						},
+						{
+							"name": "Publicacion CSV",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "id_Publicacion",
+											"value": "5",
+											"type": "text"
+										}
+									]
+								},
+								"url": "localhost:3200/publicacion/publicacion_CSV"
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Reportes",
+					"item": [
+						{
+							"name": "Top 5 Posts con mas likes",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": "localhost:3200/reportes/top_5_PostS_Likes"
+							},
+							"response": []
+						},
+						{
+							"name": "Cantidad De Posts Por Categoria",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": "localhost:3200/reportes/cantidad_Posts_Categoria"
+							},
+							"response": []
+						},
+						{
+							"name": "Top 10 Usuarios con mas publicaciones",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": "localhost:3200/reportes/top_10_Usuarios_Publicaciones"
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Prueba",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "localhost:3200/user/prueba"
+			},
+			"response": []
+		}
+	]
+}

@@ -23,6 +23,10 @@ class User {
         this.cant_Publicaciones++;
     }
 
+    decrementarCantidadPublicaciones(){
+        this.cant_Publicaciones--;
+    }
+
     decrementarCantidadPublicaciones() {
         if (this.cant_Publicaciones > 0) {
             this.cant_Publicaciones--;

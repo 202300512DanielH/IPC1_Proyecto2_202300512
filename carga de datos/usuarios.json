@@ -1,6 +1,6 @@
 [
     {
-        "codigo": "20240001",
+        "codigo": 20240001,
         "nombres": "Alberto Juan",
         "apellidos": "Pérez Lopez",
         "genero": "M",
@@ -10,7 +10,7 @@
         "contrasenia": "Albert123-"
     },
     {
-        "codigo": "20240002",
+        "codigo": 20240002,
         "nombres": "María José",
         "apellidos": "García Martínez",
         "genero": "F",
@@ -20,7 +20,7 @@
         "contrasenia": "Maria456!"
     },
     {
-        "codigo": "20240003",
+        "codigo": 20240003,
         "nombres": "Carlos Eduardo",
         "apellidos": "Rodríguez Sánchez",
         "genero": "M",
@@ -30,7 +30,7 @@
         "contrasenia": "Carlos789#"
     },
     {
-        "codigo": "20240004",
+        "codigo": 20240004,
         "nombres": "Laura Fernanda",
         "apellidos": "Gómez Ramírez",
         "genero": "F",
@@ -40,7 +40,7 @@
         "contrasenia": "Laura123_"
     },
     {
-        "codigo": "20240005",
+        "codigo": 20240005,
         "nombres": "Juan Manuel",
         "apellidos": "Martínez Pérez",
         "genero": "M",
@@ -50,7 +50,7 @@
         "contrasenia": "Juan456!"
     },
     {
-        "codigo": "20240006",
+        "codigo": 20240006,
         "nombres": "Ana María",
         "apellidos": "López Gutiérrez",
         "genero": "F",
@@ -60,7 +60,7 @@
         "contrasenia": "Ana789#"
     },
     {
-        "codigo": "20240007",
+        "codigo": 20240007,
         "nombres": "Diego Alejandro",
         "apellidos": "Hernández Rodríguez",
         "genero": "M",
@@ -70,7 +70,7 @@
         "contrasenia": "Diego123-"
     },
     {
-        "codigo": "20240008",
+        "codigo": 20240008,
         "nombres": "Sofía Isabel",
         "apellidos": "García López",
         "genero": "F",
@@ -80,7 +80,7 @@
         "contrasenia": "Sofia456!"
     },
     {
-        "codigo": "20240009",
+        "codigo": 20240009,
         "nombres": "Andrés Felipe",
         "apellidos": "Martínez Gómez",
         "genero": "M",
@@ -90,7 +90,7 @@
         "contrasenia": "Andres789#"
     },
     {
-        "codigo": "20240010",
+        "codigo": 20240010,
         "nombres": "Paola Andrea",
         "apellidos": "López García",
         "genero": "F",

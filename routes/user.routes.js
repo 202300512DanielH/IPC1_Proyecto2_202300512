@@ -12,10 +12,11 @@ api.post('/registrarse', user_Controller.registrar_Usuario);//Funciona
 api.post('/iniciar_Sesion', user_Controller.iniciar_Sesion);//Funciona
 api.put('/actualizar_Usuario/:id', user_Controller.actualizar_Usuario);//Funciona
 
-
 //Funciones para el administrador
 api.get('/listar_Usuarios', user_Controller.listar_Usuarios);//Funciona
 api.put('/eliminar_Usuario/:id', user_Controller.eliminar_Usuario);//Funciona
-api.post('/carga_Masiva', user_Controller.carga_Masiva);
+api.post('/carga_Masiva', user_Controller.carga_Masiva);//Funciona
+api.get('/usuario_Unico/:id', user_Controller.mostrar_Usuario_Unico);//Funciona
+api.post('/usuario_CSV', user_Controller.usuario_CSV);//Funciona
 
 module.exports = api;
