@@ -1,0 +1,115 @@
+<app-navbar></app-navbar>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Menu Admin</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="../../../assets/favicon.ico"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- Font Awesome icons (free version)-->
+    <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="./home-admin.component.css" rel="stylesheet" />
+</head>
+<body id="page-top">
+    
+
+    <!-- SECCION GESTIONAR MENSAJES -->
+    <section class="page-section portfolio" id="portfolio">
+        <div class="container">
+            <!-- Portfolio Section Heading-->
+            <br>
+            <br>
+            <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">OPCIONES DE ADMINISTRADOR</h2>
+            <!-- Icon Divider-->
+            <div class="divider-custom">
+                <div class="divider-custom-line"></div>
+                <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                <div class="divider-custom-line"></div>
+            </div>
+            <div style="display: flex; justify-content: center;">
+                <button type="button" class="btn btn-primary" style="margin-right: 20px;" (click)="mostrarSeccionUsuarios()">Gestionar usuarios</button>
+                <button type="button" class="btn btn-primary" style="margin-right: 20px;" >Gestionar Publicaciones</button>
+            </div>           
+
+        </div>
+    </section>
+
+    <!-- GESTIONAR USUARIOS -->
+    <div *ngIf="mostrarUsuarios">
+        <section *ngIf="mostrarUsuarios" id="usuarios" class="page-section portfolio" style="background-color: aqua; text-align: center; display: block;">
+            <h4>Gestionar Usuarios</h4>
+            <br>
+            <div class="container">
+                <div class="body">
+                    <form #masiv_Us="ngForm" (ngSubmit)="onSubmit(masiv_Us)">
+                        <div class="form-row">
+                            <label>Carga Masiva(path) / CSV (codigo Usuario)</label>
+                            <input [(ngModel)]="value_Form" name="value_Form" type="text" class="form-control" required>
+                            <br>
+                            <div class="d-grid gap-2 d-md-block" style="margin-top: 10px;">
+                                <button type="submit" class="btn btn-success btn-lg" style="margin-right: 10px;">Carga Masiva</button>
+                                <button type="submit" class="btn btn-success btn-lg" style="margin-right: 10px;">CSV</button>
+                            </div>                            
+                        </div>
+                    </form>   
+                </div>                
+                <table class="table table-hover">
+                    <thead>
+                        <tr>
+                            <th>Código</th>
+                            <th>Nombres</th>
+                            <th>Apellidos</th>
+                            <th>Genero</th>
+                            <th>Facultad</th>
+                            <th>Carrera</th>
+                            <th>Correo</th>
+                            <th>Password</th>
+                            <th>Rol</th>
+                            <th>No. Publicaciones</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let usuario of usuarios">
+                            <td>{{ usuario.codigo }}</td>
+                            <td>{{ usuario.nombres }}</td>
+                            <td>{{ usuario.apellidos }}</td>
+                            <td>{{ usuario.genero }}</td>
+                            <td>{{ usuario.facultad }}</td>
+                            <td>{{ usuario.carrera }}</td>
+                            <td>{{ usuario.correo }}</td>
+                            <td>{{ usuario.password }}</td>
+                            <td>{{ usuario.rol }}</td>
+                            <td>{{ usuario.cant_Publicaciones }}</td>
+                            <td>
+                                <form #mostrar_User="ngForm" (ngSubmit)="mostrar_USer_Submit(mostrar_User)">
+                                    <input type="hidden" value="g_Usuario" name="tipo_gestion">
+                                    <input type="hidden" name="correo" value="{{ usuario.codigo }}">
+                                    <button type="button" class="btn btn-primary" style="margin-right: 10px;" (click)="showAlert(usuario)">Ver</button>
+                                    <button type="submit" class="btn btn-danger">Eliminar</button>
+                                </form>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </div>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
+    <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+    <!-- * *                               SB Forms JS                               * *-->
+    <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
+    <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+    <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>

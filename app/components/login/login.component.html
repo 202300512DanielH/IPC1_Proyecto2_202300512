@@ -1,0 +1,23 @@
+<div class="wrapper">
+    <div class="body">
+        <img class="logo" src="../../../assets/img/login.png" alt="Img Login">
+        <h1>Login</h1>
+        <form #login="ngForm" (ngSubmit)="onSubmit(login)">
+            <div class="form-floating mb-3">
+                <input [(ngModel)]="codigo" #codigoInput="ngModel" name="codigo" type="number" class="form-control" placeholder="Ingrese su codigo" required>
+                <label>Codigo Usac</label>
+            </div>
+            <div class="form-floating mb-3">
+                <input [(ngModel)]="password" #passwordInputo="ngModel" name="password" type="password" class="form-control" placeholder="Ingrese su password" required>
+                <label>Password</label>
+            </div>
+            <div class="d-grid gap-2 d-md-block">
+                <button type="submit" class="btn btn-success btn-lg" style="margin-right: 10px;" id=login [disabled]="!login.form.valid">Aceptar</button>
+                <button type="button" class="btn btn-secondary btn-lg" routerLink="/home">Volver</button>
+            </div>
+        </form>
+        <p>
+            No tienes cuenta? <a routerLink="/sigIn">Registrar</a>
+        </p>
+    </div>
+</div>
